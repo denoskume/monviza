@@ -1,0 +1,83 @@
+/* Monviza Stylesheet - Responsive, Modern, Bilingual */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, #003366, #0066cc);
+}
+.navbar-brand,
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+.navbar .dropdown-menu {
+  background-color: #003366;
+}
+.navbar .dropdown-item {
+  color: #ffffff;
+}
+.navbar .dropdown-item:hover {
+  background-color: #0055aa;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #004080, #00bcd4);
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 1rem auto 0;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+}
+section h2 {
+  font-weight: 700;
+}
+p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Service Cards */
+.service-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  perspective: 1000px;
+}
+.service-card:hover {
+  transform: translateY(-10px) rotateX(2deg);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+  background-color: #002244;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Multilingual handling */
+[lang] {
+  display: none;
+}
