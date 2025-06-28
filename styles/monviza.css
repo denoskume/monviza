@@ -77,14 +77,9 @@ footer {
   font-size: 0.95rem;
 }
 
-/* Hide all languages by default */
+/* Show nothing by default */
 [lang] {
   display: none;
 }
 
-/* Show French by default */
-html[lang="fr"] [lang="fr"],
-html[lang="en"] [lang="en"] {
-  display: block;
-}
-
+/* Dynamically shown by JS */
