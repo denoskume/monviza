@@ -1,4 +1,5 @@
-/* Monviza Stylesheet - Responsive, Modern, Bilingual */
+/* Monviza - Styles en français uniquement */
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f0f4f8;
@@ -7,7 +8,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Navbar */
+/* Navigation */
 .navbar {
   background: linear-gradient(to right, #003366, #0066cc);
 }
@@ -16,17 +17,11 @@ body {
   color: white !important;
   font-weight: 500;
 }
-.navbar .dropdown-menu {
-  background-color: #003366;
-}
-.navbar .dropdown-item {
-  color: #ffffff;
-}
-.navbar .dropdown-item:hover {
-  background-color: #0055aa;
+.navbar .nav-link:hover {
+  text-decoration: underline;
 }
 
-/* Hero */
+/* Section Accueil */
 .hero {
   background: linear-gradient(to right, #004080, #00bcd4);
   color: white;
@@ -43,19 +38,18 @@ body {
   margin: 1rem auto 0;
 }
 
-/* Sections */
-section {
-  padding: 4rem 2rem;
-}
+/* Titres de sections */
 section h2 {
   font-weight: 700;
 }
+
+/* Paragraphe généraux */
 p {
   font-size: 1.05rem;
   line-height: 1.6;
 }
 
-/* Service Cards */
+/* Cartes de services */
 .service-card {
   background: white;
   border-radius: 15px;
@@ -68,16 +62,11 @@ p {
   box-shadow: 0 20px 30px rgba(0,0,0,0.15);
 }
 
-/* Footer */
+/* Pied de page */
 footer {
   background-color: #002244;
   color: white;
   padding: 1.5rem 0;
   text-align: center;
   font-size: 0.95rem;
-}
-
-/* Multilingual handling */
-[lang] {
-  display: none;
 }
