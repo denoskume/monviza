@@ -1,20 +1,16 @@
 // scripts/lang-toggle.js
 
 function changeLanguage(lang) {
-  // Set the lang attribute on the <html> tag
-  document.documentElement.setAttribute('lang', lang);
-
-  // Show only matching language content
   document.querySelectorAll('[lang]').forEach(el => {
-    el.style.display = (el.getAttribute('lang') === lang) ? 'block' : 'none';
+    el.style.display = el.getAttribute('lang') === lang ? 'inline' : 'none';
   });
 
-  // Save preference
+  // Optionally highlight active language in dropdown (if needed)
   localStorage.setItem('preferredLang', lang);
 }
 
-// Initialize language on page load
-window.addEventListener('DOMContentLoaded', () => {
+// Automatically apply user's last selected language
+window.onload = () => {
   const savedLang = localStorage.getItem('preferredLang') || 'fr';
   changeLanguage(savedLang);
-});
+};
