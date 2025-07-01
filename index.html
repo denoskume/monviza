@@ -3,27 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Monviza | Chaque talent est un visa vers l’avenir</title>
-  <link rel="stylesheet" href="styles/immersive.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="description" content="Monviza - Mobilité académique panafricaine simplifiée." />
+  <meta name="keywords" content="étudier à l'étranger, visa étudiant, mobilité académique, Afrique, Monviza" />
+  <meta name="author" content="Monviza" />
+  <title>Monviza | Un visa, une vision.</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/monviza.css" />
 </head>
 <body>
 
-<!-- 🎬 Section immersive -->
-<section class="hero-section">
-  <div class="overlay-gradient"></div>
-  <canvas id="particles-bg"></canvas>
-
-  <div class="hero-content">
-    <h1 id="typewriter"></h1>
-    <p class="subtitle">Une vision panafricaine pour l’éducation mondiale.</p>
-    <p class="signature">« Chaque talent est un visa vers l’avenir. » — <strong>Monviza</strong></p>
+<!-- 🔝 Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Monviza</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMonviza">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMonviza">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#accueil">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </div>
-</section>
+</nav>
 
-  <section id="accueil" class="hero-section d-flex align-items-center">
+<!-- ✨ Accueil -->
+<section id="accueil" class="hero-section d-flex align-items-center">
   <div class="container text-center">
-    <h1 class="display-3 fw-bold mb-3 text-white">
+    <h1 class="display-3 fw-bold text-white mb-3">
       Monviza. Un visa, une vision.
     </h1>
     <p class="lead text-white-50 mb-4">
@@ -34,9 +45,46 @@
   </div>
 </section>
 
+<!-- 🧭 À propos -->
+<section id="apropos" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <img src="assets/about-illustration.svg" alt="Notre histoire" class="img-fluid" style="max-height: 260px;" />
+      </div>
+      <div class="col-md-7">
+        <h2 class="text-primary fw-bold mb-4">À propos de Monviza</h2>
+        <p>Monviza est une initiative panafricaine née en 2020, fondée sur une conviction simple : la mobilité académique doit être un droit stratégique, fluide et inclusif. Lancée depuis l’Inde et portée par une expertise biculturelle, Monviza accompagne les talents africains dans leur quête d'opportunités éducatives à travers le monde, en alliant excellence, empathie et rigueur.</p>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-<script src="scripts/intro.js"></script>
+        <p>Initialement connue sous le nom “Étude à l’étranger”, la plateforme a évolué en 2024 pour devenir Monviza — une entité repensée pour incarner une vision plus audacieuse, plus globale. Chaque projet académique devient ainsi un parcours guidé, humanisé, depuis le choix d’université jusqu’à l’obtention du visa et au-delà.</p>
+
+        <p>Aujourd’hui, Monviza agit comme un pont entre les aspirations locales et les universités d’excellence mondiale. Nous croyons que chaque étudiant africain mérite d'accéder aux meilleures ressources internationales, et nous bâtissons les passerelles qui rendent cette ambition concrète, éthique et durable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🧱 Placeholder services/contact -->
+<section id="services" class="py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4 text-primary">Nos services</h2>
+    <p class="text-muted">À venir… (orientation, visas, bourses, accompagnement personnalisé)</p>
+  </div>
+</section>
+
+<section id="contact" class="py-5 bg-dark text-center text-white">
+  <div class="container">
+    <h2 class="mb-3">Contact</h2>
+    <p>📧 <a href="mailto:info@monviza.com" class="text-white">info@monviza.com</a></p>
+    <p>💼 LinkedIn : <a href="#" class="text-white">Monviza</a> — 📱 WhatsApp disponible sur demande</p>
+  </div>
+</section>
+
+<!-- 🔻 Footer -->
+<footer class="text-center py-4 text-white bg-black">
+  &copy; 2025 Monviza — Un visa, une vision.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
