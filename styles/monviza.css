@@ -1,72 +1,136 @@
-/* Monviza - Styles en français uniquement */
-
+/* ===== MONVIZA THEME ===== */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f0f4f8;
+  background-color: #f9fbfe;
+  color: #212529;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-}
-
-/* Navigation */
-.navbar {
-  background: linear-gradient(to right, #003366, #0066cc);
-}
-.navbar-brand,
-.nav-link {
-  color: white !important;
-  font-weight: 500;
-}
-.navbar .nav-link:hover {
-  text-decoration: underline;
-}
-
-/* Section Accueil */
-.hero {
-  background: linear-gradient(to right, #004080, #00bcd4);
-  color: white;
-  padding: 5rem 2rem;
-  text-align: center;
-}
-.hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-.hero p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 1rem auto 0;
-}
-
-/* Titres de sections */
-section h2 {
-  font-weight: 700;
-}
-
-/* Paragraphe généraux */
-p {
-  font-size: 1.05rem;
   line-height: 1.6;
 }
 
-/* Cartes de services */
-.service-card {
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  perspective: 1000px;
-}
-.service-card:hover {
-  transform: translateY(-10px) rotateX(2deg);
-  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+h1, h2, h3, h4 {
+  font-weight: 700;
 }
 
-/* Pied de page */
-footer {
-  background-color: #002244;
-  color: white;
-  padding: 1.5rem 0;
+/* === NAVBAR === */
+.navbar {
+  background-color: #001f3f;
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+  color: #ffffff !important;
+}
+.navbar .nav-link {
+  color: #ffffffaa !important;
+  font-weight: 500;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* === HERO SECTION === */
+.hero-section {
+  background: linear-gradient(to right, #001f3f, #004080);
+  color: #fff;
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+}
+.hero-section h1 {
+  font-size: 3.5rem;
+}
+.hero-section p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+.hero-section .btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* === ABOUT SECTION === */
+#apropos {
+  background-color: #f4f6f9;
+}
+#apropos h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+#apropos p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #343a40;
+}
+#apropos a {
+  color: #004080;
+  text-decoration: underline;
+}
+
+/* === SERVICES PLACEHOLDER === */
+#services {
+  background-color: #ffffff;
+}
+#services h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#services p {
+  color: #6c757d;
+}
+
+/* === CONTACT SECTION === */
+#contact {
+  background-color: #001f3f;
+}
+#contact h2 {
+  font-size: 2rem;
+}
+#contact a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+
+
+/* Images responsives */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Titres adaptables */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Centrage mobile des boutons */
+@media (max-width: 576px) {
+  .hero-section .btn {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #000000;
+  color: #ffffffcc;
+  text-align: center;
+  padding: 1.5rem 0;
   font-size: 0.95rem;
 }
